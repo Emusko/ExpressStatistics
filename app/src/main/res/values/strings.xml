@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">ExpressStatistics</string>
+    <string name="percentage_pattern">%1$s %%</string>
+    <string name="amount_pattern">%1$s AZN</string>
+    <string name="statistics_title_pattern">All expences \n\n\n %1$s \n \n \n %2$s / month</string>
+</resources>
