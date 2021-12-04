@@ -1,22 +1,18 @@
 package az.express.statistics
 
-import android.graphics.Color
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.activity.viewModels
+import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.SearchView
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import az.express.statistics.databinding.ActivityMainBinding
-import com.github.mikephil.charting.charts.PieChart
 import com.github.mikephil.charting.data.Entry
 import com.github.mikephil.charting.data.PieData
 import com.github.mikephil.charting.data.PieDataSet
 import com.github.mikephil.charting.data.PieEntry
 import com.github.mikephil.charting.highlight.Highlight
 import com.github.mikephil.charting.listener.OnChartValueSelectedListener
-import java.util.ArrayList
-import java.util.HashMap
 
 class MainActivity : AppCompatActivity() {
     lateinit var binding: ActivityMainBinding
@@ -81,6 +77,7 @@ class MainActivity : AppCompatActivity() {
             it.data = pieData
             it.centerText = getString(R.string.statistics_title_pattern, 1300000F.formatForSpace(), "AZN")
             it.description = null
+            @Suppress("DEPRECATION")
             it.setDrawSliceText(false)
             it.holeRadius = 95.0f
             it.setTouchEnabled(false)

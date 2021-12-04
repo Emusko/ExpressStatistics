@@ -8,7 +8,6 @@ import android.widget.Filter
 import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.category_item_list_view.view.*
 import java.util.*
-import kotlin.collections.ArrayList
 
 class CategoryListRecyclerAdapter(
     private val context: Context,
